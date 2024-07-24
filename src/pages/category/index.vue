@@ -42,6 +42,11 @@
                     :text="el.videoCategoryName"
                     @click="toSearch(el.videoCategoryId)"
                   />
+                    <!-- <van-image
+                      src="http://47.98.194.150/roco/image/202401/20240120.jpg"
+                    />
+                    <div style="margin-top: 3px;">{{ el.videoCategoryName }}</div> -->
+                  <!-- </van-grid-item> -->
                 </van-grid>
               </div>
             </div>
