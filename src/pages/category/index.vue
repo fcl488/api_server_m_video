@@ -88,7 +88,7 @@ const categoryList = ref<categoryVO[]>([])
 
 const queryAllCategory = () => {
   categoryApi.queryAll().then((res) => {
-    console.log(res)
+    // console.log(res)
     categoryList.value = res.data
     show.value = false
   })
