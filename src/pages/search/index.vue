@@ -14,7 +14,7 @@
           <van-list v-model:loading="loading" :finished="finished" finished-text="没有更多了" @load="onLoad" offset="100">
             <van-row :gutter="[20, 20]">
               <van-col span="12" v-for="item in videos" :key="item.videoId">
-                <videoCard :url="item.carver" :title="item.videoName" @click="toVideoPage(item.videoId)"></videoCard>
+                <videoCard :url="item.cover" :title="item.videoName" @click="toVideoPage(item.videoId)"></videoCard>
               </van-col>
             </van-row>
           </van-list>
@@ -27,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive, onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import videoCard from '@/components/videoCard/index.vue'
 import videoApi from '@/api/video'

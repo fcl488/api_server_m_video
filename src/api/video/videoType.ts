@@ -3,7 +3,7 @@ import { baseResult } from '@/api/baseType'
 export interface videoList {
   videoId: number
   videoName: string
-  carver: string
+  cover: string
 }
 
 export interface videoListVO {

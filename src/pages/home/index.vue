@@ -21,7 +21,7 @@
             <van-row :gutter="[20, 20]">
               <van-col span="12" v-for="item in videos" :key="item.videoId">
                 <videoCard
-                  :url="item.carver"
+                  :url="item.cover"
                   :title="item.videoName"
                   @click="toVideoPage(item.videoId)"
                 ></videoCard>
